@@ -1,4 +1,8 @@
 streamlit
+pandas
+requests
+geopy
+gTTS
+streamlit-js-eval
 folium
 streamlit-folium
-geopy
