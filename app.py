@@ -1193,18 +1193,33 @@ st.markdown("""
 # -----------------------------------------------------------------------------
 # DYNAMIC TELEMETRY & GEO-HELPER FUNCTIONS
 # -----------------------------------------------------------------------------
+from streamlit_js_eval import get_geolocation
+
+
+def get_live_user_location():
+  """Fetches real-time HTML5 browser GPS coordinates."""
+  loc_data = get_geolocation()
+  if loc_data and "coords" in loc_data:
+    lat = loc_data["coords"]["latitude"]
+    lon = loc_data["coords"]["longitude"]
+    return round(lat, 4), round(lon, 4), True
+  return 17.3850, 78.4867, False
+
+
 def get_coordinates(location_name):
-    if not GEOPY_AVAIL or not location_name.strip():
-        return 17.3850, 78.4867
-    try:
-        query = location_name if "India" in location_name else f"{location_name}, India"
-        geolocator = Nominatim(user_agent="safesync_disaster_app_v8", timeout=5)
-        loc = geolocator.geocode(query)
-        if loc:
-            return loc.latitude, loc.longitude
-    except Exception:
-        pass
+  if not GEOPY_AVAIL or not location_name.strip():
     return 17.3850, 78.4867
+  try:
+    query = (
+        location_name if "India" in location_name else f"{location_name}, India"
+    )
+    geolocator = Nominatim(user_agent="safesync_disaster_app_v8", timeout=5)
+    loc = geolocator.geocode(query)
+    if loc:
+      return round(loc.latitude, 4), round(loc.longitude, 4)
+  except Exception:
+    pass
+  return 17.3850, 78.4867
 
 @st.cache_data(ttl=600)
 def fetch_live_telemetry(lat, lon, hazard="Landslide", vuln="Low"):
@@ -1279,10 +1294,29 @@ with st.sidebar:
 
     st.divider()
     st.markdown(f"### {T['location_setup']}")
-    user_location = st.text_input(T["location_input"], value="Hyderabad")
-    
-    user_lat, user_lon = get_coordinates(user_location)
-    st.markdown(f"**{T['coordinates']}:** <span style='color:green;'>{user_lat}, {user_lon}</span>", unsafe_allow_html=True)
+
+    use_live_gps = st.checkbox("📍 Detect Live Device GPS", value=True)
+
+    if use_live_gps:
+      user_lat, user_lon, is_live = get_live_user_location()
+      if is_live:
+        user_location = "Live Device Location"
+        st.caption("🟢 Active GPS Lock")
+      else:
+        user_location = st.text_input(
+            T["location_input"],
+            value="Hyderabad",
+            help="Browser GPS unavailable/denied. Type manually below.",
+        )
+    else:
+      user_location = st.text_input(T["location_input"], value="Hyderabad")
+      user_lat, user_lon = get_coordinates(user_location)
+
+    st.markdown(
+        f"**{T['coordinates']}:** <span style='color:green;'>{user_lat},"
+        f" {user_lon}</span>",
+        unsafe_allow_html=True,
+    )
 
     st.divider()
     st.markdown(f"### {T['hazard_profile']}")
@@ -1380,9 +1414,55 @@ if nav_option == T["nav_page1"]:
     map_col, table_col = st.columns([1.2, 1])
 
     with map_col:
+        import folium
+        from streamlit_folium import st_folium
+
         st.markdown(f"### {T['map_title']}")
-        map_df = pd.DataFrame(shelters_data)
-        st.map(map_df[["lat", "lon"]], zoom=12)
+
+        # 1. Initialize Map centered on User's Live GPS
+        m = folium.Map(location=[user_lat, user_lon], zoom_start=13, tiles="OpenStreetMap")
+
+        # 2. Add USER LIVE GPS Marker (Red Icon + Risk Zone Radius)
+        folium.Marker(
+            location=[user_lat, user_lon],
+            popup=f"<b>Your Live Position</b><br>Lat: {user_lat}, Lon: {user_lon}",
+            tooltip="📍 You Are Here (Live GPS)",
+            icon=folium.Icon(color="red", icon="user", prefix="fa")
+        ).add_to(m)
+
+        # High-Risk Hazard Radius Circle around user
+        folium.Circle(
+            radius=1500,  # 1.5 km hazard impact zone
+            location=[user_lat, user_lon],
+            popup="Active Hazard Impact Radius",
+            color="#FF0000",
+            fill=True,
+            fill_color="#FF0000",
+            fill_opacity=0.15
+        ).add_to(m)
+
+        # 3. Add ALL Shelter/Relief Area Markers (Blue Icons)
+        for shelter in shelters_data:
+            s_lat = shelter.get("lat")
+            s_lon = shelter.get("lon")
+            s_name = shelter.get("Shelter Name", "Evacuation Center")
+            s_cap = shelter.get("Available Cap", "N/A")
+            s_dist = shelter.get("Distance", "N/A")
+
+            if s_lat and s_lon:
+                folium.Marker(
+                    location=[s_lat, s_lon],
+                    popup=(
+                        f"<b>{s_name}</b><br>"
+                        f"<b>Distance:</b> {s_dist}<br>"
+                        f"<b>Capacity:</b> {s_cap} spots left"
+                    ),
+                    tooltip=f"🏥 Shelter: {s_name}",
+                    icon=folium.Icon(color="blue", icon="hospital-o", prefix="fa")
+                ).add_to(m)
+
+        # 4. Render Interactive Folium Map in Streamlit
+        st_folium(m, width="100%", height=420)
 
         # VOICE ASSISTANT GUIDANCE
         st.markdown(f"### {T['map_voice_title']}")
