@@ -1482,6 +1482,63 @@ if nav_option == T["nav_page1"]:
         df_display = pd.DataFrame(shelters_data)[["Shelter Name", "Distance", "Available Cap", "Accessibility Ramp"]]
         df_display.columns = [T["col_name"], T["col_dist"], T["col_spots"], T["col_ramp"]]
         st.dataframe(df_display, use_container_width=True)
+        # -----------------------------------------------------------------------------
+        # ADDED FEATURE: SEARCH ANY AREA / VILLAGE / CITY IN INDIA
+        # -----------------------------------------------------------------------------
+        st.divider()
+        st.markdown("### 🔍 Search Any Indian Area, Village, or City")
+        st.caption("Search custom locations across India to inspect regional disaster risk & map telemetry independently of your live GPS.")
+
+        search_col1, search_col2 = st.columns([3, 1])
+        with search_col1:
+            searched_place = st.text_input("Enter Location Name (e.g., Araku Valley, Wayanad, Shimla, Charminar)", value="", placeholder="Type any place in India...")
+        with search_col2:
+            search_btn = st.button("🔎 Locate Area", use_container_width=True)
+
+        if searched_place.strip():
+            s_lat, s_lon = get_coordinates(searched_place)
+            
+            # Verify if coordinates were successfully resolved
+            if (s_lat, s_lon) != (17.3850, 78.4867) or "hyderabad" in searched_place.lower():
+                st.success(f"📍 **Target Found:** {searched_place.title()} | Coordinates: `{s_lat}, {s_lon}`")
+                
+                # Fetch telemetry for searched custom area
+                searched_telemetry = fetch_live_telemetry(s_lat, s_lon, hazard=hazard_type, vuln=vuln_status)
+                
+                # Display target telemetry quick summary
+                t_col1, t_col2, t_col3 = st.columns(3)
+                with t_col1:
+                    st.metric("Rainfall (24h)", f"{searched_telemetry['rain_mm']} mm")
+                with t_col2:
+                    st.metric("Wind Speed", f"{searched_telemetry['wind_speed']} km/h")
+                with t_col3:
+                    st.metric("Calculated Risk Score", f"{searched_telemetry['risk_score']} / 100")
+
+                # Generate dedicated map for searched custom location
+                m_search = folium.Map(location=[s_lat, s_lon], zoom_start=12, tiles="OpenStreetMap")
+
+                # Target area pin
+                folium.Marker(
+                    location=[s_lat, s_lon],
+                    popup=f"<b>Searched Location:</b> {searched_place.title()}<br><b>Risk Score:</b> {searched_telemetry['risk_score']}/100",
+                    tooltip=f"📍 {searched_place.title()}",
+                    icon=folium.Icon(color="orange", icon="search", prefix="fa")
+                ).add_to(m_search)
+
+                # Simulated hazard buffer circle for target location
+                folium.Circle(
+                    radius=2000,
+                    location=[s_lat, s_lon],
+                    popup=f"Hazard Assessment Zone - {searched_place.title()}",
+                    color="#FF8C00",
+                    fill=True,
+                    fill_color="#FF8C00",
+                    fill_opacity=0.2
+                ).add_to(m_search)
+
+                st_folium(m_search, width="100%", height=350, key="search_location_map")
+            else:
+                st.error("⚠️ Location not found. Please specify the district or state name (e.g., 'Muniguda, Odisha').")
 
 # -----------------------------------------------------------------------------
 # 2. WALKIE-TALKIE & FM BROADCAST SIMULATION
