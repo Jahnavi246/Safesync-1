@@ -502,82 +502,6 @@ NDMA आधिकारिक सुरक्षा निर्देशन: �
             "ne": "सुनामीको चेतावनी: तुरुन्तै अग्लो स्थानमा वा समुद्री तटबाट भित्री क्षेत्रमा जानुहोस्। तटबाट टाढा रहनुहोस्।"
         }
     },
-    "Gas Leak": {
-        "text": {
-            "en": """==================================================
-NDMA OFFICIAL SURVIVAL PROTOCOL: GAS LEAK HAZARD
-==================================================
-1. Do not switch electrical switches on or off.
-2. Do not use matches, lighters, or flames.
-3. Leave the building immediately.
-4. Move to fresh air and stay away from the leak.
-5. Call emergency services from a safe location.
-6. Do not return until the area is declared safe.""",
-            "te": """==================================================
-NDMA అధికారిక రక్షణ మార్గదర్శకాలు: గ్యాస్ లీకేజీ
-==================================================
-1. విద్యుత్ స్విచ్‌లను ఆన్ లేదా ఆఫ్ చేయకండి.
-2. అగ్గిపుల్లలు, లైటర్లు లేదా మంటలను ఉపయోగించకండి.
-3. వెంటనే భవనం నుండి బయటకు వెళ్లండి.
-4. స్వచ్ఛమైన గాలి ఉన్న ప్రదేశానికి వెళ్లి లీక్ ప్రాంతానికి దూరంగా ఉండండి.
-5. సురక్షితమైన ప్రదేశం నుండి అత్యవసర సేవలకు కాల్ చేయండి.
-6. ప్రాంతం సురక్షితం అని ప్రకటించే వరకు తిరిగి వెళ్లకండి.""",
-            "ta": """==================================================
-NDMA அதிகாரப்பூர்வ பாதுகாப்பு வழிகாட்டுதல்கள்: எரிவாயு கசிவு
-==================================================
-1. மின் சுவிட்சுகளை ஆன் அல்லது ஆஃப் செய்ய வேண்டாம்.
-2. தீக்குச்சி, லைட்டர் அல்லது தீயைப் பயன்படுத்த வேண்டாம்.
-3. உடனடியாக கட்டிடத்திலிருந்து வெளியேறுங்கள்.
-4. சுத்தமான காற்றுள்ள இடத்திற்குச் சென்று கசிவு ஏற்பட்ட இடத்திலிருந்து விலகி இருங்கள்.
-5. பாதுகாப்பான இடத்திலிருந்து அவசர சேவைகளை அழைக்கவும்.
-6. பகுதி பாதுகாப்பானது என்று அறிவிக்கப்படும் வரை திரும்பிச் செல்ல வேண்டாம்.""",
-            "kn": """==================================================
-NDMA ಅಧಿಕೃತ ಸುರಕ್ಷತಾ ಮಾರ್ಗದರ್ಶಿ: ಗ್ಯಾಸ್ ಸೋರಿಕೆ
-==================================================
-1. ವಿದ್ಯುತ್ ಸ್ವಿಚ್‌ಗಳನ್ನು ಆನ್ ಅಥವಾ ಆಫ್ ಮಾಡಬೇಡಿ.
-2. ಬೆಂಕಿಕಡ್ಡಿ, ಲೈಟರ್ ಅಥವಾ ಯಾವುದೇ ಬೆಂಕಿಯನ್ನು ಬಳಸಬೇಡಿ.
-3. ತಕ್ಷಣ ಕಟ್ಟಡದಿಂದ ಹೊರಬನ್ನಿ.
-4. ತಾಜಾ ಗಾಳಿ ಇರುವ ಸ್ಥಳಕ್ಕೆ ಹೋಗಿ ಮತ್ತು ಸೋರಿಕೆಯ ಸ್ಥಳದಿಂದ ದೂರವಿರಿ.
-5. ಸುರಕ್ಷಿತ ಸ್ಥಳದಿಂದ ತುರ್ತು ಸೇವೆಗಳಿಗೆ ಕರೆ ಮಾಡಿ.
-6. ಪ್ರದೇಶ ಸುರಕ್ಷಿತ ಎಂದು ಘೋಷಿಸುವವರೆಗೆ ಹಿಂದಿರುಗಬೇಡಿ.""",
-            "hi": """==================================================
-NDMA आधिकारिक सुरक्षा प्रोटोकॉल: गैस रिसाव
-==================================================
-1. बिजली के स्विच को चालू या बंद न करें।
-2. माचिस, लाइटर या आग का उपयोग न करें।
-3. तुरंत इमारत से बाहर निकलें।
-4. ताजी हवा वाली जगह जाएँ और गैस रिसाव से दूर रहें।
-5. सुरक्षित स्थान से आपातकालीन सेवाओं को कॉल करें।
-6. क्षेत्र को सुरक्षित घोषित किए जाने तक वापस न जाएँ।""",
-            "bn": """==================================================
-NDMA সরকারি সুরক্ষা নির্দেশিকা: গ্যাস লিক
-==================================================
-1. বৈদ্যুতিক সুইচ চালু বা বন্ধ করবেন না।
-2. দেশলাই, লাইটার বা কোনো আগুন ব্যবহার করবেন না।
-3. অবিলম্বে ভবন থেকে বেরিয়ে যান।
-4. তাজা বাতাসের জায়গায় যান এবং গ্যাস লিকের স্থান থেকে দূরে থাকুন।
-5. নিরাপদ স্থান থেকে জরুরি পরিষেবায় ফোন করুন।
-6. এলাকা নিরাপদ ঘোষণা না হওয়া পর্যন্ত ফিরে যাবেন না।""",
-            "ne": """==================================================
-NDMA आधिकारिक सुरक्षा निर्देशन: ग्यास चुहावट
-==================================================
-1. बिजुलीका स्विचहरू अन वा अफ नगर्नुहोस्।
-2. सलाई, लाइटर वा आगो प्रयोग नगर्नुहोस्।
-3. तुरुन्तै भवनबाट बाहिर निस्कनुहोस्।
-4. ताजा हावा भएको स्थानमा जानुहोस् र ग्यास चुहावट भएको ठाउँबाट टाढा रहनुहोस्।
-5. सुरक्षित स्थानबाट आपतकालीन सेवामा फोन गर्नुहोस्।
-6. क्षेत्र सुरक्षित घोषणा नभएसम्म फर्केर नजानुहोस्।"""
-        },
-        "voice": {
-            "en": "Gas Leak Warning: Do not touch electrical switches or use open flames. Leave the building immediately and move to fresh air.",
-            "te": "గ్యాస్ లీకేజీ హెచ్చరిక: స్విచ్‌లను ఆన్ లేదా ఆఫ్ చేయకండి. మంటలను వాడవద్దు. వెంటనే బయటకు వచ్చి స్వచ్ఛమైన గాలి ఉన్న ప్రదేశానికి వెళ్లండి.",
-            "ta": "எரிவாயு கசிவு எச்சரிக்கை: மின் சுவிட்சுகளை இயக்க வேண்டாம். உடனடியாக கட்டிடத்திலிருந்து வெளியேறி சுத்தமான காற்றுள்ள இடத்திற்குச் செல்லுங்கள்.",
-            "kn": "ಗ್ಯಾಸ್ ಸೋರಿಕೆ ಮುನ್ನೆಚ್ಚರಿಕೆ: ವಿದ್ಯುತ್ ಸ್ವಿಚ್‌ಗಳನ್ನು ಆನ್ ಅಥವಾ ಆಫ್ ಮಾಡಬೇಡಿ. ತಕ್ಷಣ ಕಟ್ಟಡದಿಂದ ಹೊರಬನ್ನಿ.",
-            "hi": "गैस रिसाव की चेतावनी: बिजली के स्विच को चालू या बंद न करें। तुरंत इमारत से बाहर निकलें और ताजी हवा में जाएँ।",
-            "bn": "গ্যাস লিকের সতর্কতা: বৈদ্যুতিক সুইচ চালু বা বন্ধ করবেন না। অবিলম্বে ভবন থেকে বেরিয়ে তাজা বাতাসের জায়গায় যান।",
-            "ne": "ग्यास चुहावटको चेतावनी: बिजुलीका स्विचहरू चलाउनुहुँदैन। तुरुन्तै भवनबाट बाहिर निस्की ताजा हावा भएको स्थानमा जानुहोस्।"
-        }
-    },
     "Chemical Leak": {
         "text": {
             "en": """==================================================
@@ -652,89 +576,6 @@ NDMA आधिकारिक सुरक्षा निर्देशन: �
             "hi": "रासायनिक रिसाव की चेतावनी: रिसाव वाले क्षेत्र से तुरंत दूर जाएँ। गीले कपड़े से मुँह ढकें।",
             "bn": "বিষাক্ত গ্যাস লিকের সতর্কতা: এলাকা থেকে অবিলম্বে দূরে সরে যান। ভেজা কাপড় দিয়ে মুখ ঢাকুন।",
             "ne": "विषालु ग्यास चुहावटको चेतावनी: तुरुन्तै टाढा जानुहोस्। भिजेकै कपडाले मुख ढाक्नुहोस्।"
-        }
-    },
-    "Building Collapse": {
-        "text": {
-            "en": """==================================================
-NDMA OFFICIAL SURVIVAL PROTOCOL: BUILDING COLLAPSE
-==================================================
-1. Move away from the collapsing structure immediately.
-2. Avoid falling debris and exposed electrical wires.
-3. Do not use elevators.
-4. Move to a safe open area.
-5. Call emergency services and provide the location.
-6. Do not enter the damaged building.
-7. If trapped, conserve energy and signal rescuers.""",
-            "te": """==================================================
-NDMA అధికారిక రక్షణ మార్గదర్శకాలు: భవనం కూలిపోవడం
-==================================================
-1. కూలిపోతున్న భవనం నుండి వెంటనే దూరంగా వెళ్లండి.
-2. పడుతున్న శిథిలాలు మరియు బయటకు కనిపిస్తున్న విద్యుత్ తీగలకు దూరంగా ఉండండి.
-3. లిఫ్ట్ ఉపయోగించకండి.
-4. సురక్షితమైన బహిరంగ ప్రదేశానికి వెళ్లండి.
-5. అత్యవసర సేవలకు కాల్ చేసి ప్రాంతాన్ని తెలియజేయండి.
-6. దెబ్బతిన్న భవనంలోకి వెళ్లకండి.
-7. చిక్కుకుపోతే శక్తిని ఆదా చేసుకుని రక్షకులకు సంకేతాలు ఇవ్వండి.""",
-            "ta": """==================================================
-NDMA அதிகாரப்பூர்வ பாதுகாப்பு வழிகாட்டுதல்கள்: கட்டிடம் இடிந்து விழுதல்
-==================================================
-1. இடிந்து விழும் கட்டிடத்திலிருந்து உடனடியாக விலகிச் செல்லுங்கள்.
-2. விழும் இடிபாடுகள் மற்றும் வெளிப்பட்ட மின்கம்பிகளிலிருந்து விலகி இருங்கள்.
-3. லிப்டைப் பயன்படுத்த வேண்டாம்.
-4. பாதுகாப்பான திறந்த இடத்திற்குச் செல்லுங்கள்.
-5. அவசர சேவைகளை அழைத்து இடத்தைத் தெரிவிக்கவும்.
-6. சேதமடைந்த கட்டிடத்திற்குள் செல்ல வேண்டாம்.
-7. சிக்கிக் கொண்டால் சக்தியைச் சேமித்து மீட்புப் பணியாளர்களுக்கு சைகை செய்யுங்கள்.""",
-            "kn": """==================================================
-NDMA ಅಧಿಕೃತ ಸುರಕ್ಷತಾ ಮಾರ್ಗದರ್ಶಿ: ಕಟ್ಟಡ ಕುಸಿತ
-==================================================
-1. ಕುಸಿಯುತ್ತಿರುವ ಕಟ್ಟಡದಿಂದ ತಕ್ಷಣ ದೂರ ಹೋಗಿ.
-2. ಬೀಳುತ್ತಿರುವ ಅವಶೇಷಗಳು ಮತ್ತು ಹೊರಗೆ ಕಾಣುವ ವಿದ್ಯುತ್ ತಂತಿಗಳಿಂದ ದೂರವಿರಿ.
-3. ಲಿಫ್ಟ್ ಬಳಸಬೇಡಿ.
-4. ಸುರಕ್ಷಿತ ತೆರೆದ ಸ್ಥಳಕ್ಕೆ ತೆರಳಿ.
-5. ತುರ್ತು ಸೇವೆಗಳಿಗೆ ಕರೆ ಮಾಡಿ ಸ್ಥಳವನ್ನು ತಿಳಿಸಿ.
-6. ಹಾನಿಗೊಳಗಾದ ಕಟ್ಟಡದೊಳಗೆ ಹೋಗಬೇಡಿ.
-7. ಸಿಕ್ಕಿಹಾಕಿಕೊಂಡರೆ ಶಕ್ತಿಯನ್ನು ಉಳಿಸಿ ರಕ್ಷಕರಿಗೆ ಸಂಕೇತ ನೀಡಿ.""",
-            "hi": """==================================================
-NDMA आधिकारिक सुरक्षा प्रोटोकॉल: इमारत ढहना
-==================================================
-1. गिरती हुई इमारत से तुरंत दूर जाएँ।
-2. गिरते मलबे और खुले बिजली के तारों से दूर रहें।
-3. लिफ्ट का उपयोग न करें।
-4. सुरक्षित खुले स्थान पर जाएँ।
-5. आपातकालीन सेवाओं को कॉल करके स्थान बताएं।
-6. क्षतिग्रस्त इमारत में प्रवेश न करें।
-7. फँस जाने पर अपनी ऊर्जा बचाएँ और बचाव दल को संकेत दें।""",
-            "bn": """==================================================
-NDMA সরকারি সুরক্ষা নির্দেশিকা: ভবন ধস
-==================================================
-1. ধসে পড়া ভবন থেকে অবিলম্বে দূরে সরে যান।
-2. পড়ন্ত ধ্বংসাবশেষ এবং খোলা বৈদ্যুতিক তার থেকে দূরে থাকুন।
-3. লিফট ব্যবহার করবেন না।
-4. নিরাপদ খোলা জায়গায় যান।
-5. জরুরি পরিষেবায় ফোন করে অবস্থান জানান।
-6. ক্ষতিগ্রস্ত ভবনের ভিতরে প্রবেশ করবেন না।
-7. আটকে পড়লে শক্তি সঞ্চয় করুন এবং উদ্ধারকারীদের সংকেত দিন।""",
-            "ne": """==================================================
-NDMA आधिकारिक सुरक्षा निर्देशन: भवन भत्किनु
-==================================================
-1. भत्किँदै गरेको भवनबाट तुरुन्तै टाढा जानुहोस्।
-2. खसिरहेको मलबा र खुला विद्युत् तारबाट टाढा रहनुहोस्।
-3. लिफ्ट प्रयोग नगर्नुहोस्।
-4. सुरक्षित खुला स्थानमा जानुहोस्।
-5. आपतकालीन सेवामा फोन गरी स्थान बताउनुहोस्।
-6. क्षतिग्रस्त भवनभित्र प्रवेश नगर्नुहोस्।
-7. फसेमा आफ्नो ऊर्जा बचाउनुहोस् र उद्धारकर्तालाई संकेत दिनुहोस्।"""
-        },
-        "voice": {
-            "en": "Building Collapse Warning: Move away from the collapsing structure immediately. Avoid falling debris and move to an open area.",
-            "te": "భవనం కూలిపోవడం హెచ్చరిక: కూలిపోతున్న భవనం నుండి వెంటనే దూరంగా వెళ్లండి. బహిరంగ ప్రదేశానికి చేరుకోండి.",
-            "ta": "கட்டிடம் இடிந்து விழுதல் எச்சரிக்கை: இடிந்து விழும் கட்டிடத்திலிருந்து உடனடியாக விலகி திறந்தவெளிக்குச் செல்லுங்கள்.",
-            "kn": "ಕಟ್ಟಡ ಕುಸಿತ ಮುನ್ನೆಚ್ಚರಿಕೆ: ಕುಸಿಯುತ್ತಿರುವ ಕಟ್ಟಡದಿಂದ ತಕ್ಷಣ ದೂರ ಹೋಗಿ ತೆರೆದ ಸ್ಥಳಕ್ಕೆ ತೆರಳಿ.",
-            "hi": "इमारत ढहने की चेतावनी: गिरती हुई इमारत से तुरंत दूर जाएँ और खुले स्थान पर जाएँ।",
-            "bn": "ভবন ধসের সতর্কতা: ধসে পড়া ভবন থেকে অবিলম্বে দূরে সরে খোলা জায়গায় যান।",
-            "ne": "भवन भत्किने चेतावनी: भत्किँदै गरेको भवनबाट तुरुन्तै टाढा खुला स्थानमा जानुहोस्।"
         }
     },
     "Severe Thunderstorm": {
@@ -1206,7 +1047,7 @@ def get_coordinates(location_name):
         pass
     return 17.3850, 78.4867
 
-@st.cache_data(ttl=600)
+@st.cache_data(ttl=300)
 def fetch_live_telemetry(lat, lon, hazard="Landslide", vuln="Low"):
     """Fetches accurate real-time weather metrics from Open-Meteo API and calculates risk via rules.py."""
     url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current=temperature_2m,relative_humidity_2m,rain,showers,precipitation,wind_speed_10m&daily=precipitation_sum&timezone=auto"
@@ -1376,151 +1217,82 @@ if nav_option == T["nav_page1"]:
 
     st.divider()
 
-    # MAP AND VOICE GUIDANCE
-    map_col, table_col = st.columns([1.2, 1])
+    # DYNAMIC MAP & VOICE GUIDANCE
+    col_map, col_voice = st.columns([2, 1])
 
-    with map_col:
+    with col_map:
         st.markdown(f"### {T['map_title']}")
-        map_df = pd.DataFrame(shelters_data)
-        st.map(map_df[["lat", "lon"]], zoom=12)
+        # Map dataframe preparation
+        map_records = [{"lat": user_lat, "lon": user_lon}]
+        for s in shelters_data:
+            map_records.append({"lat": s["lat"], "lon": s["lon"]})
+        
+        map_df = pd.DataFrame(map_records)
+        st.map(map_df, zoom=12)
 
-        # VOICE ASSISTANT GUIDANCE
+    with col_voice:
         st.markdown(f"### {T['map_voice_title']}")
-        st.markdown(f"""
-        <div class="voice-box">
-            <b>📢 {T['chat_assistant']} ({selected_language_name} - {hazard_type}):</b><br/>
-            <i>"{active_voice_guidance}"</i>
-        </div>
-        """, unsafe_allow_html=True)
+        st.markdown(f'<div class="voice-box">📢 <b>Voice Broadcast Script:</b><br><br><i>"{active_voice_guidance}"</i></div>', unsafe_allow_html=True)
+        
+        audio_stream = generate_voice_audio(active_voice_guidance, lang_code)
+        if audio_stream:
+            st.audio(audio_stream, format="audio/mp3")
+        else:
+            st.info("🔊 Real-time audio rendering active (Requires gTTS package).")
 
-        map_audio_stream = generate_voice_audio(active_voice_guidance, lang_code)
-        if map_audio_stream:
-            st.audio(map_audio_stream, format="audio/mp3")
+    st.divider()
 
-    with table_col:
-        st.markdown(f"### {T['table_title']}")
-        df_display = pd.DataFrame(shelters_data)[["Shelter Name", "Distance", "Available Cap", "Accessibility Ramp"]]
-        df_display.columns = [T["col_name"], T["col_dist"], T["col_spots"], T["col_ramp"]]
-        st.dataframe(df_display, use_container_width=True)
+    # ALL NEARBY SHELTERS TABLE
+    st.markdown(f"### {T['table_title']}")
+    shelter_table_df = pd.DataFrame(shelters_data)[[
+        "Shelter Name", "Distance", "Available Cap", "Accessibility Ramp"
+    ]].rename(columns={
+        "Shelter Name": T["col_name"],
+        "Distance": T["col_dist"],
+        "Available Cap": T["col_spots"],
+        "Accessibility Ramp": T["col_ramp"]
+    })
+    st.dataframe(shelter_table_df, use_container_width=True)
 
 # -----------------------------------------------------------------------------
-# 2. WALKIE-TALKIE & FM BROADCAST SIMULATION
+# 2. WALKIE-TALKIE & FM BROADCAST
 # -----------------------------------------------------------------------------
 elif nav_option == T["nav_page2"]:
-    st.markdown(f"## 📻 {T['nav_page2']}")
-    st.info(f"Broadcast Channel synchronized in **{selected_language_name}** for **{hazard_type}** emergency response.")
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.subheader("📡 Peer-to-Peer Walkie-Talkie Relay")
-        wt_channel = st.selectbox(
-            "Select Communication Channel Frequency",
-            ["Channel 1 - Emergency First Responders (462.5625 MHz)", 
-             "Channel 2 - Community Relief Teams (462.5875 MHz)", 
-             "Channel 3 - Civilian Distress Relay (462.6125 MHz)"]
-        )
-        
-        wt_sender = st.text_input("Sender Unit Call Sign", value="RESCUE-LEAD-01")
-        wt_message = st.text_area("Transmit Push-To-Talk Payload (Text/Voice Alert)", value=active_voice_guidance)
-        
-        if st.button("🎙️ TRANSMIT WALKIE-TALKIE SIGNAL", use_container_width=True):
-            st.success(f"[{datetime.now().strftime('%H:%M:%S')}] Signal Broadcasted on {wt_channel.split()[0]} by {wt_sender}!")
-            st.code(f"PAYLOAD [{lang_code.upper()}]: {wt_message}", language="text")
-
-    with col2:
-        st.subheader("📻 Emergency FM Radio Broadcast Station")
-        st.metric(label="FM Frequency Status", value="102.6 MHz - Disaster Alert Channel", delta="LIVE TRANSMISSION")
-        
-        st.markdown("**Live Emergency Announcement Audio Stream:**")
-        fm_audio = generate_voice_audio(f"Emergency FM Announcement for {user_location}. {active_voice_guidance}", lang_code)
-        if fm_audio:
-            st.audio(fm_audio, format="audio/mp3")
-        else:
-            st.warning("Install `gTTS` to stream dynamic radio voice synthesis.")
-
-        st.markdown("**Automated Emergency Repeater Loop:**")
-        st.text_area("FM Station Broadcast Transcript", value=f"Attention residents of {user_location}. {active_protocol_text}", height=180)
+    st.markdown(f"## {T['nav_page2']}")
+    st.info("📡 Emergency Offline FM & Mesh Network Broadcast Engine")
+    st.markdown("""
+    **Active Frequency:** 106.5 MHz Emergency FM Mesh
+    
+    * **Broadcasting Node:** Regional Disaster Mitigation Tower
+    * **Signal Status:** Encrypted High-Band Sync Active
+    """)
+    st.audio(generate_voice_audio(active_voice_guidance, lang_code) or bytes())
 
 # -----------------------------------------------------------------------------
-# 3. SMARTWATCH INTERFACE SIMULATION
+# 3. SMARTWATCH SIMULATION
 # -----------------------------------------------------------------------------
 elif nav_option == T["nav_page3"]:
-    st.markdown(f"## ⌚ {T['nav_page3']}")
-    st.markdown("Simulates low-bandwidth wearable telemetry, real-time vital tracking, and panic alerts.")
-
-    telemetry = fetch_live_telemetry(user_lat, user_lon, hazard=hazard_type, vuln=vuln_status)
-    
-    wearable_data = {
-        "user_location": user_location,
-        "hazard_detected": hazard_type,
-        "language_code": lang_code,
-        "heart_rate_bpm": 104,
-        "spo2_percent": 97,
-        "risk_level": telemetry["severity"],
-        "relocation_priority": telemetry["relocation_priority"],
-        "sos_triggered": False,
-        "battery_remaining": "88%"
-    }
-
-    col1, col2 = st.columns([1, 1])
-
-    with col1:
-        st.subheader("⌚ Wearable Display Screen")
-        
-        st.markdown(f"""
-        <div style="background-color: #000000; color: #00FF66; padding: 20px; border-radius: 20px; border: 4px solid #333333; font-family: monospace;">
-            <p style="text-align: center; font-size: 18px; font-weight: bold; color: #FF4B4B;">🚨 HAZARD ALERT 🚨</p>
-            <hr style="border-color: #333333;"/>
-            <p>📍 <b>LOC:</b> {wearable_data['user_location']}</p>
-            <p>⚠️ <b>HAZARD:</b> {wearable_data['hazard_detected'].upper()}</p>
-            <p>⚡ <b>STATUS:</b> {wearable_data['risk_level']}</p>
-            <p>❤️ <b>HEART RATE:</b> {wearable_data['heart_rate_bpm']} BPM</p>
-            <p>🔋 <b>BATTERY:</b> {wearable_data['battery_remaining']}</p>
-        </div>
-        """, unsafe_allow_html=True)
-        st.write("")
-        
-        if st.button("🚨 TRIGGER SMARTWATCH PANIC SOS", type="primary", use_container_width=True):
-            wearable_data["sos_triggered"] = True
-            st.error(f"🔴 SOS BROADCAST SENT FROM {user_location.upper()}! GPS COORDINATES: ({user_lat}, {user_lon}) TRANSMITTED TO EMERGENCY SERVICES.")
-
-    with col2:
-        st.subheader("📡 Wearable Telemetry Payload (JSON Stream)")
-        st.json(wearable_data)
-        
-        st.markdown("**Short Emergency Alert Voice Note:**")
-        sw_audio = generate_voice_audio(active_voice_guidance, lang_code)
-        if sw_audio:
-            st.audio(sw_audio, format="audio/mp3")
+    st.markdown(f"## {T['nav_page3']}")
+    st.markdown(f"""
+    <div style="border: 4px solid #333; border-radius: 30px; padding: 20px; width: 300px; background-color: #000; color: #fff; text-align: center;">
+        <p style="color: #ff4b4b; font-weight: bold; font-size: 18px;">⚠️ {hazard_type.upper()} ALERT</p>
+        <p style="font-size: 24px; font-weight: bold;">EVACUATE</p>
+        <p style="font-size: 12px; color: #ccc;">Nearest Shelter: {shelters_data[0]['Shelter Name']}</p>
+        <p style="font-size: 14px; color: #00ff00;">Distance: {shelters_data[0]['Distance']}</p>
+    </div>
+    """, unsafe_allow_html=True)
 
 # -----------------------------------------------------------------------------
 # 4. MULTILINGUAL AI ASSISTANT
 # -----------------------------------------------------------------------------
 elif nav_option == T["nav_page4"]:
-    st.markdown(f"## 🤖 {T['nav_page4']} ({selected_language_name})")
-    st.info(f"🗣️ Active Language: **{selected_language_name}** | Active Hazard: **{hazard_type}** | Location: **{user_location}**")
-
-    if "chat_messages" not in st.session_state:
-        st.session_state["chat_messages"] = [
-            {"role": "assistant", "content": f"{T['chat_assistant']}: {active_voice_guidance}"}
-        ]
-
-    for msg in st.session_state["chat_messages"]:
-        st.chat_message(msg["role"]).markdown(msg["content"])
-
-    user_query = st.chat_input(T["chat_placeholder"])
+    st.markdown(f"## {T['nav_page4']}")
+    st.subheader(T["chat_assistant"])
     
+    user_query = st.text_input(T["chat_placeholder"])
     if user_query:
-        st.session_state["chat_messages"].append({"role": "user", "content": user_query})
-        st.chat_message("user").markdown(user_query)
-
-        response_text = f"**[{hazard_type} Protocol - {selected_language_name}]**\n\n" + active_protocol_text
-        st.session_state["chat_messages"].append({"role": "assistant", "content": response_text})
-        
-        with st.chat_message("assistant"):
-            st.markdown(response_text)
-            
-            chat_audio = generate_voice_audio(active_voice_guidance, lang_code)
-            if chat_audio:
-                st.audio(chat_audio, format="audio/mp3")
+        st.markdown(f"**User:** {user_query}")
+        st.markdown(f"**SafeSync AI:** {active_voice_guidance}")
+        audio_stream = generate_voice_audio(active_voice_guidance, lang_code)
+        if audio_stream:
+            st.audio(audio_stream, format="audio/mp3")
