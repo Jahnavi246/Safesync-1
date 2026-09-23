@@ -1,8 +1,17 @@
 import streamlit as st
-pwd = st.sidebar.text_input("Password", type="password")
+st.title("🔒 Prototype Access")
+pwd = st.text_input("Enter Password", type="BrightForge246")
+if not pwd:
+    st.info("Please enter the password to access the app.")
+    st.stop()
 if pwd != "BrightForge246":
-    st.error("Enter the correct password in the sidebar to view the app.")
-    st.stop()  # Stops execution here if password doesn't match
+    st.error("Incorrect password. Please try again.")
+    st.stop()
+
+# Clear the login screen content after successful login
+st.empty()
+
+# 2. Rest of your app runs ONLY if password is correct
 from data import load_data
 from rules import apply_rules
 
