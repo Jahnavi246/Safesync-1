@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("🔒 Prototype Access")
 
-# 1. 'type' MUST be set to "password" to obscure user typing
+# 1. Ask for password in the main page body
 pwd = st.text_input("Enter Password", type="password")
 
 # If the user hasn't typed anything yet
@@ -10,24 +10,27 @@ if not pwd:
     st.info("Please enter the password to access the app.")
     st.stop()
 
-# 2. Compare 'pwd' against your actual password string here
+# If the password typed is incorrect
 if pwd != "BrightForge246":
     st.error("Incorrect password. Please try again.")
     st.stop()
 
-# Clear password prompt UI after successful authentication
+# Clear password input UI after successful authentication
 st.empty()
 
-# 3. Rest of your application code
-from data import load_data
-from rules import apply_rules
+# 2. Import functions that ACTUALLY exist in data.py and rules.py
+from data import load_profile_from_db, generate_dynamic_shelters
+from rules import apply_rules  # Make sure this function exists in rules.py!
 
-st.title("My Prototype App")
+st.title("SAFESYNC Dashboard")
 
-df = load_data()
-df_processed = apply_rules(df)
+# Example: Fetch user profile from SQLite DB
+profile = load_profile_from_db()
+st.write(f"Welcome, **{profile['name']}** ({profile['location']})")
 
-st.dataframe(df_processed)
+# Example: Generate local shelter data
+shelters = generate_dynamic_shelters(user_lat=16.3067, user_lon=80.4365, location_name=profile['location'])
+st.dataframe(shelters)
 import pandas as pd
 import requests
 import io
