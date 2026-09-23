@@ -1,14 +1,23 @@
 import streamlit as st
+pwd = st.sidebar.text_input("Password", type="password")
+if pwd != "BrightForge246":
+    st.error("Enter the correct password in the sidebar to view the app.")
+    st.stop()  # Stops execution here if password doesn't match
+from data import load_data
+from rules import apply_rules
+
+st.title("My Prototype App")
+
+df = load_data()
+df_processed = apply_rules(df)
+
+st.dataframe(df_processed)
 import pandas as pd
 import requests
 import io
 from datetime import datetime
-
-# Import project modules
 import rules
 import data
-
-# Optional dependency check for geopy & gTTS
 try:
     from geopy.geocoders import Nominatim
     GEOPY_AVAIL = True
