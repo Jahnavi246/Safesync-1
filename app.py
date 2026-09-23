@@ -1,17 +1,24 @@
 import streamlit as st
+
 st.title("🔒 Prototype Access")
-pwd = st.text_input("Enter Password", type="BrightForge246")
+
+# 1. 'type' MUST be set to "password" to obscure user typing
+pwd = st.text_input("Enter Password", type="password")
+
+# If the user hasn't typed anything yet
 if not pwd:
     st.info("Please enter the password to access the app.")
     st.stop()
+
+# 2. Compare 'pwd' against your actual password string here
 if pwd != "BrightForge246":
     st.error("Incorrect password. Please try again.")
     st.stop()
 
-# Clear the login screen content after successful login
+# Clear password prompt UI after successful authentication
 st.empty()
 
-# 2. Rest of your app runs ONLY if password is correct
+# 3. Rest of your application code
 from data import load_data
 from rules import apply_rules
 
