@@ -1,36 +1,4 @@
 import streamlit as st
-
-st.title("🔒 Prototype Access")
-
-# 1. Ask for password in the main page body
-pwd = st.text_input("Enter Password", type="password")
-
-# If the user hasn't typed anything yet
-if not pwd:
-    st.info("Please enter the password to access the app.")
-    st.stop()
-
-# If the password typed is incorrect
-if pwd != "BrightForge246":
-    st.error("Incorrect password. Please try again.")
-    st.stop()
-
-# Clear password input UI after successful authentication
-st.empty()
-
-# 2. Import functions that ACTUALLY exist in data.py and rules.py
-from data import load_profile_from_db, generate_dynamic_shelters
-from rules import apply_rules  # Make sure this function exists in rules.py!
-
-st.title("SAFESYNC Dashboard")
-
-# Example: Fetch user profile from SQLite DB
-profile = load_profile_from_db()
-st.write(f"Welcome, **{profile['name']}** ({profile['location']})")
-
-# Example: Generate local shelter data
-shelters = generate_dynamic_shelters(user_lat=16.3067, user_lon=80.4365, location_name=profile['location'])
-st.dataframe(shelters)
 import pandas as pd
 import requests
 import io
